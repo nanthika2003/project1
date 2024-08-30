@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+            background-color: black;
+            color: rgb(196, 66, 185);
+            text-align: center;
+            padding: 10px;
+        
+        }
+nav{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+}
+nav .logo{
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo .title a{
+    text-decoration: none;
+    color: rgb(34, 138, 179);
+    font-size: 25px;
+font-weight: bold;
+}
+.logo ul{
+    list-style-type: none;
+    display: inline-flex;
+}
+.logo ul li{
+    margin-left: 25px;
+}
+.logo ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.logo ul li a:hover {
+    background-color: #f1ecec;
+            color:black;}
+.row {  
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  background-color: rgb(12, 113, 160);
+  border-radius: 10px;
+  padding: 100px;
+  margin-bottom: 20px;
+  background-image: url('image.jpg')
+}
+.side {
+  -ms-flex: 30%; 
+  flex: 30%;
+  background-color:rgb(8, 155, 143);
+  padding: 20px;
+}
+.main {   
+  -ms-flex: 70%; 
+  flex: 70%;
+  background-color: transparent;
+  padding: 20px;
+}
+.btn button{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.btn :hover{
+    background-color: blueviolet;
+    color: aqua;
+
+}
+
+footer{
+    margin-top:20px;
+    padding: 10px;
+}
+footer p{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;   
+}
+@media screen and (max-width: 70%) {
+  .row {   
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 30%) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+        <div class="title">
+            <header>
+               
+                <h1>MASTER MIND</h1>
+            </header>
+        </div>
+            <ul>
+                <li><a href ="#">HOME</a></li>
+                <li><a href ="#">ABOUT</a></li>
+                <li><a href ="#">GALLERY</a></li>
+                <li><a href ="#">CONTACT US</a></li>
+            </ul>
+        </div>
+
+<div class="row">
+  <div class="side">
+    <h2>CONTENT</h2>
+    <p>YOUR MIND IS YOUR INSTRUMENT
+        LEARN TO BE ITS MASTER AND NOT ITS SLAVE</p>
+  </div>
+  <div class="main">
+    <h2>master mind technology</h2>
+    <p>M@stermind Technology has extensive and well-established experience in the IT industry. We offer high quality, cost effective business solutions to both the public and private business sectors. We strive to be the one support provider for all of our customer's information technology and telecommunication needs.</p>
+    <div class="btn">
+        <button>watch video </button>
+        <button>subscribe</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+    <p>www.mastermindtechno.in</p>
+</footer>
+</body>
+</html>
